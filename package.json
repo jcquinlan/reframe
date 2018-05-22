@@ -30,6 +30,7 @@
         "plugins/github-pages",
         "plugins/github-pages/example",
         "plugins/path-to-regexp",
+        "plugins/koa",
         "plugins/postcss",
         "plugins/postcss/example",
         "plugins/react",

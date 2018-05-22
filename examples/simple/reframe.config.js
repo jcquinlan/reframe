@@ -1,3 +1,7 @@
-module.exports = {};
+const koaServer = require('@reframe/koa');
 
-module.exports['serverEntryFile'] = require.resolve('./server/index.js');
+module.exports = {
+	plugins: [
+		koaServer()
+	]
+};
