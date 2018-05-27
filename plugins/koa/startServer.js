@@ -9,7 +9,6 @@ async function startServer() {
 	let port = 3000
 	const server = new Koa();
 
-	console.log('test execution');
 //configure custom middleware
 //server.use(middleware())
 

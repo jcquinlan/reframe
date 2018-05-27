@@ -50,7 +50,6 @@ async function register(server) {
         if( ! fileExists(filePath) ) {
             return h.continue;
         }
-
         const response = h.file(filePath, {confine: staticAssetsDir});
 
         setCacheHeaders(filePath, response);
@@ -66,7 +65,6 @@ async function register(server) {
             // Support for `immutable`: http://stackoverflow.com/questions/41936772/which-browsers-support-cache-control-immutable
             response.header('Cache-control', 'public, max-age=31536000, immutable');
         }
-
     }
 
     function fileExists(filePath) {

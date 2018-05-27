@@ -1,4 +1,3 @@
-const assert_usage = require('reassert/usage');
 const assert_internal = require('reassert/internal');
 const {compute_file_hash} = require('@reframe/utils/compute_file_hash');
 const getPageHtml = require('@brillout/repage/getPageHtml');
