@@ -22,7 +22,6 @@ router.get('*', async(ctx, next) => {
 
 	const pathname = ctx.request.url;
 
-	console.log('path = ' + pathname);
 	const filename = (
 	pathname==='/' && '/index.html' ||
 	pathname.split('/').slice(-1)[0].split('.').length===1 && pathname+'.html' ||
